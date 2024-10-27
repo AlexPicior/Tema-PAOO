@@ -20,7 +20,7 @@ endif()
 
 # Define the executable
 add_executable(${PROJECT_NAME}
-               inc/Studet.hpp
+               inc/Student.hpp
                src/main.cpp
                src/Student.cpp)
 
