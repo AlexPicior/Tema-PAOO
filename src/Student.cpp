@@ -1,5 +1,7 @@
 #include "Student.hpp"
 
+Student::Student(std::string n, int a) : name(n), age(a) {}
+
 std::string Student::getName() {
     return name;
 }

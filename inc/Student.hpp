@@ -10,6 +10,7 @@ private:
     std::string name;
     int age;
 public:
+    Student(std::string n, int a);
     std::string getName();
     int getAge();
     void setName(std::string n);
