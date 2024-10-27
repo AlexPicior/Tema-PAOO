@@ -2,6 +2,8 @@
 
 Student::Student(std::string n, int a) : name(n), age(a) {}
 
+Student::~Student() {}
+
 std::string Student::getName() {
     return name;
 }

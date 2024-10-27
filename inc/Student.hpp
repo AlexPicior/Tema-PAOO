@@ -11,6 +11,7 @@ private:
     int age;
 public:
     Student(std::string n, int a);
+    ~Student();
     std::string getName();
     int getAge();
     void setName(std::string n);
