@@ -6,5 +6,5 @@ CXX_FLAGS =   -std=c++14
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/alex/paoo/tema1/inc 
+CXX_INCLUDES = -I/home/alex/paoo/tema1/tema1PAOO/inc 
 

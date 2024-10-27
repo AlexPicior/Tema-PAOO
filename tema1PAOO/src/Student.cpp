@@ -1,4 +1,4 @@
-#include "Student.hpp"
+#include "../inc/Student.hpp"
 #include <iostream>
 
 Student::Student(std::string n, int a, int nc) : name(n), age(a), current_courses(new std::string[nc]), nr_courses(nc) {
