@@ -13,6 +13,7 @@ int main() {
     student.setCurrenrCourses(courses);
     std::cout << student.getName() << " " << student.getAge() << " " << student.getNrCourses() << " " << student.getCurrentCourses()[0] << "\n";
 
-    
+    Student student2(student);
+    std::cout << student2.getName() << " " << student2.getAge() << " " << student2.getNrCourses() << " " << student2.getCurrentCourses()[0] << "\n";
     return 0;
 }

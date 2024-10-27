@@ -10,6 +10,14 @@ Student::~Student() {
     std::cout<<"Obj destroyed\n";
 }
 
+Student::Student(Student& other) : name(other.name), age(other.age), nr_courses(other.nr_courses), current_courses(new std::string[other.nr_courses]) {
+    for (int i = 0; i < other.nr_courses; i++)
+    {
+        current_courses[i] = other.current_courses[i];
+    }
+    
+}
+
 std::string Student::getName() {
     return name;
 }
