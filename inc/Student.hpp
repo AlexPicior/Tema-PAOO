@@ -15,6 +15,7 @@ public:
     Student(std::string n, int a, int nc);
     ~Student();
     Student(Student& other);
+    Student(Student&& other);
     std::string getName();
     int getAge();
     std::string* getCurrentCourses();

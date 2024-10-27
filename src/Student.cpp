@@ -15,7 +15,12 @@ Student::Student(Student& other) : name(other.name), age(other.age), nr_courses(
     {
         current_courses[i] = other.current_courses[i];
     }
-    
+    std::cout<<"Obj copied\n";
+}
+
+Student::Student(Student&& other) : name(other.name), age(other.age), nr_courses(other.nr_courses), current_courses(other.current_courses) {
+    other.current_courses = nullptr;
+    std::cout<<"Obj moved\n";
 }
 
 std::string Student::getName() {

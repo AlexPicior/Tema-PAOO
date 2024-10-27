@@ -15,5 +15,8 @@ int main() {
 
     Student student2(student);
     std::cout << student2.getName() << " " << student2.getAge() << " " << student2.getNrCourses() << " " << student2.getCurrentCourses()[0] << "\n";
+
+    Student student3 = std::move(student);
+    std::cout << student3.getName() << " " << student3.getAge() << " " << student3.getNrCourses() << " " << student3.getCurrentCourses()[0] << "\n";
     return 0;
 }
