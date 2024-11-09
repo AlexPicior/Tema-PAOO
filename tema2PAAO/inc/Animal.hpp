@@ -13,6 +13,12 @@ public:
 
     // Siletly called functions: default constructor, copy constructor, copy assignment operator and destructor
 
+    Animal(const Animal&) = delete;
+
+    Animal& operator=(const Animal&) = delete;
+
+    ~Animal();
+
 };
 
 #endif 
