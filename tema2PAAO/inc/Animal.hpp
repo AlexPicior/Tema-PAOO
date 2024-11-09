@@ -10,6 +10,9 @@ private:
     int age;
 public:
     Animal(const std::string& name, int age);
+
+    // Siletly called functions: default constructor, copy constructor, copy assignment operator and destructor
+
 };
 
 #endif 
