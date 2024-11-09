@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/alex/paoo/tema1/tema2PAAO/inc/Animal.hpp
+string
+-
+iostream
+-
+
+/home/alex/paoo/tema1/tema2PAAO/src/Animal.cpp
+../inc/Animal.hpp
+/home/alex/paoo/tema1/tema2PAAO/inc/Animal.hpp
+
+/home/alex/paoo/tema1/tema2PAAO/src/main.cpp
+../inc/Animal.hpp
+/home/alex/paoo/tema1/tema2PAAO/inc/Animal.hpp
+
