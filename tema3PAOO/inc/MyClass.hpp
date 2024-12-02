@@ -19,6 +19,12 @@ public:
 
     MyClass& operator=(const MyClass& other) {
         std::cout << "Operator de asignare apelat.\n";
+
+        if (this == &other) {
+            std::cout << "Asignare la sine.\n";
+            return *this;
+        }
+
         return *this;
     }
 
