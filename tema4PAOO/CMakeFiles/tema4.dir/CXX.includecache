@@ -1,0 +1,26 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/alex/paoo/tema1/tema4PAOO/inc/FileHandler.hpp
+fstream
+-
+iostream
+-
+string
+-
+utility
+-
+stdexcept
+-
+
+/home/alex/paoo/tema1/tema4PAOO/src/main.cpp
+../inc/FileHandler.hpp
+/home/alex/paoo/tema1/tema4PAOO/inc/FileHandler.hpp
+iostream
+-
+
