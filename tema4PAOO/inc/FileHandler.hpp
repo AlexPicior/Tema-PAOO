@@ -48,6 +48,25 @@ public:
             throw std::runtime_error("File is not open for reading.");
         }
     }
+
+    FileHandler(const FileHandler&) = delete;
+
+    FileHandler& operator=(const FileHandler&) = delete;
+
+    FileHandler(FileHandler&& other) noexcept : file(std::move(other.file)) {
+        std::cout << "FileHandler moved.\n";
+    }
+
+    FileHandler& operator=(FileHandler&& other) noexcept {
+        if (this != &other) {
+            if (file.is_open()) {
+                file.close();
+            }
+            file = std::move(other.file);
+            std::cout << "FileHandler moved via assignment.\n";
+        }
+        return *this;
+    }
 };
 
 #endif 
